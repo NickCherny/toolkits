@@ -1,0 +1,22 @@
+{
+  "name": "nick-toolkits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:package": "lerna run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package:init": "plop -- ts-node ./plopfile.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.150",
+    "lerna": "^3.20.2",
+    "lodash": "^4.17.15",
+    "plop": "^2.6.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  }
+}
