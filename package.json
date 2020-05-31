@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:package": "lerna run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build",
+    "test": "jest -- ts-node packages/",
+    "test:integration": "lerna run test:integration",
     "package:init": "plop -- ts-node ./plopfile.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/react": "^10.0.3",
+    "@types/jest": "^25.2.1",
     "@types/lodash": "^4.14.150",
+    "jest": "^25.4.0",
     "lerna": "^3.20.2",
     "lodash": "^4.17.15",
     "plop": "^2.6.0",
